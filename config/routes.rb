@@ -21,4 +21,7 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
+get "/tools" => "welcome#tools"
+get "/text" => "welcome#text"
+
 end
