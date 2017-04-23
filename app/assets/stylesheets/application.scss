@@ -76,6 +76,18 @@ html {
     color: #F2F9F1;
 }
 
+//------search bar---------
+.form-group {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+    width: 250px;
+}
 //------carousel----------
 .carousel-inner img {
     width: 100%; /* Set width to 100% */

@@ -8,11 +8,14 @@ Rails.application.routes.draw do
         post :publish
         post :hide
       end
-      resources :resumes
+    resources :resumes
     end
   end
 
   resources :jobs do
+    collection do
+      get :search
+    end
     resources :resumes
   end
 
