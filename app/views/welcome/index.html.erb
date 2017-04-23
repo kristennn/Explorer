@@ -1,16 +1,99 @@
-<div class="col-md-12">
-   <div class="row box">
-     <div class="box-inner col-md-6 col-md-offset-3">
-       <h1 class="title">18K Offer</h1>
-       <p class="slogan">18K Offer 是一个提供18K薪水工作机会的求职网站。
-         <br>
-         我们希望借由这个网站，能让大家找到且应征上高薪且优质的工作。
-         <br>
-         凭借自己的努力和天份也会变 Winner
-       </p>
-       <p class="lead">
-         <%= link_to '马上应征', jobs_path, class: 'btn btn-danger' %>
-       </p>
+<!-- carousel indicators -->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+ </ol>
+
+<!-- carousel -->
+ <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="https://ooo.0o0.ooo/2017/04/22/58fabc6ac2998.jpeg" alt="First slide">
+      <div class="carousel-caption">
+      <h2>Explorer</h2>
+      <br/>
+      <p>想找工作？等等，你了解自己吗？</p>
+      </div>
+    </div>
+
+    <div class="item">
+
+      <img src="https://ooo.0o0.ooo/2017/04/22/58fabca503dcd.jpg" alt="Second slide">
+      <div class="carousel-caption">
+      <h2>Explorer</h2>
+      <br/>
+      <p>相信我，大家都会迷茫，你并不孤独</p>
+      </div>
+
+    </div>
+
+    <div class="item">
+
+        <img src="https://ooo.0o0.ooo/2017/04/22/58fabe56e88a8.jpeg" alt="Third slide">
+        <div class="carousel-caption">
+          <h2>Explorer</h2>
+            <br/>
+              <p>出发吧！来探索未知的自己</p>
+              <br/>
+              <%= link_to '马上应征', jobs_path, class: 'btn btn-danger' %>
+        </div>
+    </div>
+  </div>
+
+<!-- carousel button -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+     <span class="glyphicon glyphicon-chevron-left"></span>
+   </a>
+   <a class="carousel-control right" href="#myCarousel" data-slide="next">
+     <span class="glyphicon glyphicon-chevron-right"></span>
+   </a>
+  </div>
+
+<!-- website introduction -->
+  <section id="about" class="sec-about">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-sm-offset-3">
+            <h1 style="text-align:center">Why Explorer？</h1>
+            <hr>
+            <p style="text-align:center">Explorer是一个神奇的招聘网站，比你更懂自己的招聘网站
+          </p>
+          <p style="text-align:center">网站附有科学评测工具，应征者可以通过自己的评测结果来筛选工作</p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+<!-- 3 sections of website -->
+ <div class="content-section-a">
+   <div class="container">
+     <div class="row">
+       <div class="col-lg-5 col-sm-6">
+         <hr class="section-heading-spacer">
+         <div class="clearfix"></div>
+         <h2 class="section-heading">工作那么多，我该选哪个？</h2>
+         <p class="lead">科学的测评工具帮助你筛选出“为你而设”的工作</p>
+       </div>
+       <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+         <%= image_tag 'pic-1.jpg', class: 'img-responsive' %>
+       </div>
+     </div>
+   </div>
+ </div>
+
+ <div class="content-section-a">
+   <div class="container">
+     <div class="row">
+       <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+         <hr class="section-heading-spacer">
+         <div class="clearfix"></div>
+         <h2 class="section-heading">不知道自己喜欢什么，擅长什么？</h2>
+         <p class="lead">找到理想工作，从“探索自己”开始</p>
+       </div>
+       <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+         <%= image_tag 'pic-2.jpg', class: 'img-responsive' %>
+       </div>
      </div>
    </div>
  </div>
@@ -21,40 +104,8 @@
        <div class="col-lg-5 col-sm-6">
          <hr class="section-heading-spacer">
          <div class="clearfix"></div>
-         <h2 class="section-heading">找工作一定要带手机</h2>
-         <p class="lead">因为没带手机就不能联络公司</p>
-       </div>
-       <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-         <%= image_tag 'pic-1.jpg', class: 'img-responsive' %>
-       </div>
-     </div>
-   </div>
- </div>
- 
- <div class="content-section-b">
-   <div class="container">
-     <div class="row">
-       <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-         <hr class="section-heading-spacer">
-         <div class="clearfix"></div>
-         <h2 class="section-heading">一定要把履历写好在投</h2>
-         <p class="lead">履历如果不会写就一定要多上网寻求帮助，例如  <a target="_blank" href="http://blog.niclin.tw">Nic 的 Blog</a>! 啦啦啦啦啦啦啦</p>
-       </div>
-       <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-         <%= image_tag 'pic-2.jpg', class: 'img-responsive' %>
-       </div>
-     </div>
-   </div>
- </div>
- 
- <div class="content-section-a">
-   <div class="container">
-     <div class="row">
-       <div class="col-lg-5 col-sm-6">
-         <hr class="section-heading-spacer">
-         <div class="clearfix"></div>
-         <h2 class="section-heading">这是可以乱改的字<br>动手试试看吧</h2>
-         <p class="lead">摩改大赛可以参考<a target="_blank" href="https://forum.qzy.camp/">论坛资源</a></p>
+         <h2 class="section-heading">只会想“我能做什么”，却不管“我想做什么”？</h2>
+         <p class="lead">找到让自己充满激情的工作并不是只有xdite老师可以做到，我们也能</p>
        </div>
        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
          <%= image_tag 'pic-3.jpg', class: 'img-responsive' %>
@@ -62,3 +113,39 @@
      </div>
    </div>
  </div>
+
+<!-- user talks -->
+<section id="testimonial" class="talk-about-us">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 col-xs-12 text-center">
+                <h2 class="section-title">他/她们说</h2>
+                <div class="short-line"></div>
+                <div id="talk-about-us" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#talk-about-us" data-slide-to="0" class=""></li>
+                    <li data-target="#talk-about-us" data-slide-to="1" class="active"></li>
+                    <li data-target="#talk-about-us" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item">
+                      <p>我是刚毕业的大学生，很迷茫到底要找什么样的工作，现在的招聘网站工作虽多，但却让我挑花了眼，还好遇到了Explorer，让我知道了我的兴趣和能力所在。</p>
+                      <img src="/assets/user_1-cb52a11bc698d2caef851aeb7b87f0d4e227c11292e6099b9c9b1df39ad3745f.png" alt="User 1">
+                      <strong>安安，应届毕业生</strong>
+                    </div>
+                    <div class="item active">
+                      <p>我已经30岁了，现在职业遇到了瓶颈，做的工作不喜欢，又不敢辞职，不知道辞职之后可以去做什么，还好在Explorer这里找到了自己的方向。</p>
+                      <img src="/assets/user_3-b90843627ef7bcef54a11e00745c60d49b16120af942755162d71874fafb1665.png" alt="User 3">
+                      <strong>李芸，房产公司售楼经理</strong>
+                    </div>
+                    <div class="item">
+                      <p>我毕业之后就听从家里安排回老家工作，但是一颗心总是不安分，看到周围的朋友都活的那么精彩，我不甘心自己就这样过一眼看到头的生活，是Explorer帮助我找回了对工作的激情。</p>
+                      <img src="/assets/user_2-5458d27648ee0152a979d9a28754621d61076296fd2b86b117a7634a9a73b3c4.png" alt="User 2">
+                      <strong>阿戈，银行柜员</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>

@@ -41,24 +41,24 @@ html {
 }
 
 .navbar-default .navbar-brand {
-    color: #EF6C00;
+    color: #F2F9F1;
     padding: 10px 15px;
     line-height: 30px;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    color: #FF6F00;
+    color: #B6CDBD;
     background-color: transparent;
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #EF6C00;
+    color: #F2F9F1;
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: #FF6F00;
+    color: #B6CDBD;
     background-color: transparent;
 }
 
@@ -72,53 +72,42 @@ html {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .open > a:hover {
-    background-color: #FFE0B2;
-    color: #212121;
+    background-color: transparent;
+    color: #F2F9F1;
 }
+
+//------carousel----------
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+}
+
+.carousel-caption{
+  padding-bottom: 400px;
+}
+
+.carousel-caption p {
+  font-size: 1.5em;
+
+}
+.carousel-caption h2 {
+    color: #fff !important;
+    font-size: 5em
+}
+
 
 
 //---------Box---------
 
-.box {
-   background-image: url("header.jpg");
-   background-repeat: no-repeat;
-   background-size: cover;
-   margin-bottom: 50px;
-
- .box-inner {
-     background-color: rgba(250, 250, 250, 0.69);
-     padding-bottom: 5px;
-     margin-top: 150px;
-     margin-bottom: 150px;
- }
-
- .title {
-     text-align: center;
-     margin-bottom: 80px;
- }
-
- .slogan {
-     color: #222;
-     margin-top: 10px;
-     margin-bottom: 50px;
-     text-align: center;
-     font-size: 25px;
-     top: 12px;
- }
-
- .lead {
-     margin-bottom: 60px;
-     text-align: center;
-     color: white;
- }
+.sec-about {
+  background-color: #F2F9F1;
 }
-
 
 //---------Content---------
 
  .content-section-a {
      padding: 50px 0;
-     background-color: #f8f8f8;
+     background-color: #F2F9F1;
  }
 
  .content-section-b {
@@ -142,6 +131,9 @@ html {
      font-weight: 400;
  }
 
+ //----User talks------
+ .talk-about-us{padding-bottom:160px;padding-top:60px;color:#666}.talk-about-us strong{margin-top:25px;color:#4A6BB5;font-weight:600;font-style:italic}.talk-about-us .item>img{width:80px;height:80px;margin:0 auto;border-radius:50%;border:2px solid #ccc;margin-bottom:10px}.talk-about-us .item>p{max-width:600px;letter-spacing:1px;margin:0 auto;line-height:2;margin-bottom:20px}.talk-about-us .carousel-indicators>li{background-color:#dcdcdc;border:0 none;height:10px;margin:1px;width:10px;border-radius:0;margin:0 5px;-moz-transform:rotate(45deg);-webkit-transform:rotate(45deg);-o-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}.talk-about-us .carousel-indicators li.active{background-color:#4A6BB5}.talk-about-us .carousel-indicators{bottom:-70px}
+
 
 //---------Footer---------
 .footer {
@@ -149,13 +141,11 @@ html {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 100px;
-  background-color: #233140;
+  height: 70px;
+  background-color: #212121;
 
   p {
       color: white;
       margin-top: 30px;
     }
   }
-
-  
