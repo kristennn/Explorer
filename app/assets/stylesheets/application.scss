@@ -76,6 +76,12 @@ html {
     color: #F2F9F1;
 }
 
+ @media (min-width: 768px) {
+   .navbar {
+     border-radius: 0; //圆角为0
+   }
+ }
+
 //------search bar---------
 .form-group {
     margin-bottom: 10px;
