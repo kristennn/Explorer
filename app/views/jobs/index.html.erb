@@ -1,4 +1,4 @@
-<div class="pull-right">
+<div class="pull-right clearfix">
   <%= link_to("Add a job", new_job_path, :class => "btn btn-default" ) %>
 </div>
 
@@ -21,35 +21,11 @@
         </li>
     </ul>
 </div>
+<div class="index-job">
+<div class="container">
 
-<table class="table table-boldered">
-    <thead>
-        <tr>
-            <td>
-                职缺</td>
-            <td>薪资下限</td>
-            <td>薪资上限</td>
-            <td>刊登时间</td>
-        </tr>
-
-    </thead>
-    <tbody>
-        <% @jobs.each do |job| %>
-        <tr>
-            <td>
-                <%= link_to(job.title, job_path(job)) %>
-            </td>
-            <td>
-                <%= job.wage_lower_bound %>
-            </td>
-            <td>
-                <%= job.wage_upper_bound %>
-            </td>
-            <td>
-                <%= job.created_at %>
-            </td>
-        </tr>
-        <% end %>
-    </tbody>
-
-</table>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuDivider">
+      <li><a href="/jobs?order=by_lower_bound">by Minimum Wage</a></li>
+      <li><a href="/jobs?order=by_upper_bound">by Maximum Wage</a></li>
+      <li><a href="/jobs">by Published Time</a></li>
+    </ul>
