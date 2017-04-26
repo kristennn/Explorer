@@ -16,3 +16,9 @@
 </table>
 <br><br><br><br>
 <%= link_to '马上应征', jobs_path, class: 'btn btn-danger' %>
+
+<!-- 性格搜索框 -->
+<%= form_tag jobs_path, method: :get do %>
+<%= text_field_tag :name %>
+<%= submit_tag "确定" %>
+<% end %>

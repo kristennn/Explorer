@@ -20,4 +20,7 @@ scope :published, -> { where(is_hidden: false) }
 scope :recent, -> { order('created_at DESC') }
 
 has_many :resumes
+
+has_many :character_ships
+has_many :characters, :through => :character_ships
 end

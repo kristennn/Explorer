@@ -22,7 +22,7 @@ end
 def create
   @job = Job.new(job_params)
   if @job.save
-    redirect_to admin_job_path
+    redirect_to admin_jobs_path
   else
     render :new
   end
@@ -61,7 +61,7 @@ def publish
 private
 
 def job_params
-  params.require(:job).permit(:title, :description, :wage_upper_bound, :wage_lower_bound, :contact_email, :is_hidden)
+  params.require(:job).permit(:title, :description, :wage_upper_bound, :wage_lower_bound, :contact_email, :is_hidden, :character_ids => [])
 end
 
 

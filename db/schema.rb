@@ -10,7 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170423020333) do
+ActiveRecord::Schema.define(version: 20170425231714) do
+
+  create_table "character_ships", force: :cascade do |t|
+    t.integer  "character_id"
+    t.integer  "job_id"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  create_table "characters", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "jobs", force: :cascade do |t|
     t.string   "title"
@@ -25,6 +38,22 @@ ActiveRecord::Schema.define(version: 20170423020333) do
     t.string   "city"
     t.string   "company"
     t.string   "category"
+    t.boolean  "ESTJ",             default: false
+    t.boolean  "ESTP",             default: false
+    t.boolean  "ESFJ",             default: false
+    t.boolean  "ESFP",             default: false
+    t.boolean  "ENTJ",             default: false
+    t.boolean  "ENTP",             default: false
+    t.boolean  "ENFJ",             default: false
+    t.boolean  "ENFP",             default: false
+    t.boolean  "ISTJ",             default: false
+    t.boolean  "ISTP",             default: false
+    t.boolean  "ISFJ",             default: false
+    t.boolean  "ISFP",             default: false
+    t.boolean  "INTJ",             default: false
+    t.boolean  "INTP",             default: false
+    t.boolean  "INFJ",             default: false
+    t.boolean  "INFP",             default: false
   end
 
   create_table "resumes", force: :cascade do |t|

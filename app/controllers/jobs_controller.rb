@@ -11,6 +11,11 @@ class JobsController < ApplicationController
             else
               Job.published.recent
             end
+
+            if params[:name].present?
+              @character = Character.find_by(:name params[:name])
+              @jobs = @character.jobs
+            end
           end
 
   def new
@@ -64,7 +69,7 @@ class JobsController < ApplicationController
   private
 
   def job_params
-    params.require(:job).permit(:title, :description, :wage_upper_bound, :wage_lower_bound, :contact_email, :is_hidden, :category, :company, :city)
+    params.require(:job).permit(:title, :description, :wage_upper_bound, :wage_lower_bound, :contact_email, :is_hidden, :category, :company, :city, :character_ids => [])
   end
 
   protected
