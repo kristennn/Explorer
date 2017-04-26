@@ -1,4 +1,4 @@
-<table border="1">
+<!-- <table border="1">
 <thead>
 <tr>
 <th>测评工具</th>
@@ -17,8 +17,26 @@
 <br><br><br><br>
 <%= link_to '马上应征', jobs_path, class: 'btn btn-danger' %>
 
-<!-- 性格搜索框 -->
+
 <%= form_tag jobs_path, method: :get do %>
 <%= text_field_tag :name %>
 <%= submit_tag "确定" %>
-<% end %>
+<% end %> -->
+
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">探索工具</div>
+  <div class="panel-body">
+    <p>...</p>
+  </div>
+
+  <!-- List group -->
+  <ul class="list-group">
+    <li class="list-group-item"><%= link_to("16型人格测试", text_path) %></li>
+    <li class="list-group-item"><%= link_to("盖洛普优势识别器", text1_path) %></li>
+    <li class="list-group-item">Morbi leo risus</li>
+    <li class="list-group-item">Porta ac consectetur ac</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+</div>

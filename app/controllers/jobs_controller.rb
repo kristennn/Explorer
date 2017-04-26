@@ -13,8 +13,10 @@ class JobsController < ApplicationController
             end
 
             if params[:name].present?
-              @character = Character.find_by(:name params[:name])
-              @jobs = @character.jobs
+              @character = Character.all.find_by(:name => params[:name])
+              if @character.present?
+                @jobs = @character.jobs
+              end
             end
           end
 
