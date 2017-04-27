@@ -22,6 +22,11 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
 get "/tools" => "welcome#tools"
-get "/text" => "welcome#text"
+get "/firsttool" => "welcome#firsttool"
+get "/secondtool" => "welcome#secondtool"
+get "/thirdtool" => "welcome#thirdtool"
+get "/fourthtool" => "welcome#fourthtool"
+get "/fifthtool" => "welcome#fifthtool"
+get "/sixthtool" => "welcome#sixthtool"
 
 end

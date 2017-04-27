@@ -1,42 +1,19 @@
-<!-- <table border="1">
-<thead>
-<tr>
-<th>测评工具</th>
-<th>它是什么？</th>
-<th>怎么用？</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><%= link_to("16型人格测试", text_path) %></td>
-<td>这是职业规划领域最为经典的测评工具，每个人在当前阶段都有属于自己的由4个字母组成的“人格”，来测测看吧~</td>
-<td><a href="http://www.apesk.com/mbti/dati.asp">开始测试</a></td>
-</tr>
-</tbody>
-</table>
-<br><br><br><br>
-<%= link_to '马上应征', jobs_path, class: 'btn btn-danger' %>
-
-
-<%= form_tag jobs_path, method: :get do %>
-<%= text_field_tag :name %>
-<%= submit_tag "确定" %>
-<% end %> -->
-
-
 <div class="panel panel-default">
   <!-- Default panel contents -->
-  <div class="panel-heading">探索工具</div>
+  <div class="panel-heading"><h2>探索工具</h2></div>
   <div class="panel-body">
-    <p>...</p>
+    <p>以下是最为经典的几个职业测评工具</p>
+    <p>其中我们针对第一个工具，提供按照测评结果来筛选工作的功能。一键得到“为你而设”的工作</p>
   </div>
 
   <!-- List group -->
   <ul class="list-group">
-    <li class="list-group-item"><%= link_to("16型人格测试", text_path) %></li>
-    <li class="list-group-item"><%= link_to("盖洛普优势识别器", text1_path) %></li>
-    <li class="list-group-item">Morbi leo risus</li>
-    <li class="list-group-item">Porta ac consectetur ac</li>
-    <li class="list-group-item">Vestibulum at eros</li>
+    <li class="list-group-item"><%= link_to("MBTI16型人格测试", firsttool_path) %></li>
+    <li class="list-group-item"><%= link_to("盖洛普优势识别器", secondtool_path) %></li>
+    <li class="list-group-item"><%= link_to("DISC性格测试", thirdtool_path) %></li>
+    <li class="list-group-item"><%= link_to("霍兰德职业兴趣测试", fourthtool_path) %></li>
+    <li class="list-group-item"><%= link_to("生命意义探索", fifthtool_path) %></li>
+    <li class="list-group-item"><%= link_to("价值观探索", sixthtool_path) %></li>
   </ul>
 </div>
+  <%= link_to '马上应征', jobs_path, class: 'btn btn-danger' %>
