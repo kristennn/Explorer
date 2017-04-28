@@ -15,5 +15,22 @@ puts "Admin account created."
 puts "这个seeds文件可以自动建立16种人格"
 
 Character.create!([name: "ESTJ"])
+Character.create!([name: "ESTP"])
+Character.create!([name: "ESFJ"])
+Character.create!([name: "ESFP"])
+Character.create!([name: "ENTJ"])
+Character.create!([name: "ENTP"])
+Character.create!([name: "ENFJ"])
+Character.create!([name: "ENFP"])
+Character.create!([name: "ISTJ"])
+Character.create!([name: "ISTP"])
+Character.create!([name: "ISFJ"])
+Character.create!([name: "ISFP"])
+Character.create!([name: "INTJ"])
+Character.create!([name: "INTP"])
+Character.create!([name: "INFJ"])
+Character.create!([name: "INFP"])
+
+
 
 puts "16 Characters created"
