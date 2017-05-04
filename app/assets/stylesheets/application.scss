@@ -29,6 +29,7 @@ html {
  body {
    /* Margin bottom by footer height */
    margin-bottom: 100px;
+   background-color: "rgb(138,161,191)";
  }
 
 //---------Navbar---------
@@ -159,7 +160,7 @@ html {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 70px;
+  height: 100px;
   background-color: #212121;
 
   p {
@@ -278,4 +279,132 @@ html {
   font-size: 12px;
 }
 
-//--------sidebar---------
+//------职位一览表-------
+
+#job-section {
+    padding: 1em;
+    text-align: center;
+    position: relative;
+
+    .title {
+      width: 40rem;
+      font-size: 2rem;
+      text-align: left;
+      color: black;
+      margin: 0;
+      padding: 0em 2em 0em 1em;
+      padding-bottom: 0.5rem;
+    }
+
+    .job-section p {
+      width: 40rem;
+      text-align: justify;
+      padding: 0em 0em 0em 1.4em;
+      margin-bottom: 1em;
+    }
+
+    .job-section {
+      background-color: #f8f8f8;
+      display: inline-block;
+      margin: 0 1% 0;
+      padding: 2rem;
+      -moz-box-shadow: 0px 0px 57px 0px rgba(4,6,9,0.25);
+      box-shadow: 0px 0px 3px 0px rgba(4,6,9,0.25);
+      border-radius: .35rem;
+    }
+
+    .icon{
+      padding-left: 1em;
+    }
+
+    .job-logo{
+      margin: 10px;
+      border-radius: 80%;
+    }
+
+    .button{
+      margin-top: 45px;
+      vertical-align: middle;
+    }
+  }
+
+.jobname{
+  color: #71c373;
+}
+  //---------job info---------
+  #job-info {
+
+    padding: 3em;
+    text-align: center;
+    position: relative;
+
+    .job-title {
+      font-family: Arial Black;
+      font-size: 3rem;
+      padding: 1em 0em 0.5em 0em;
+    }
+
+    .description{
+      text-align: justify;
+      max-width: 550px;
+      font-size: 1.5rem;
+      padding: 0.3em 0em 0.3em 0em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .address {
+      font-size: 1.5rem;
+      padding: 0.3em 0em 0.3em 0em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .details {
+      font-size: 1.5rem;
+      padding: 0.3em 0em 0.3em 0em;
+    }
+
+    .job-info {
+      background-color: #f8f8f8;
+      display: inline-block;
+      margin: 0 1% 0;
+      padding: 2rem;
+      -moz-box-shadow: 0px 0px 57px 0px rgba(4,6,9,0.25);
+      box-shadow: 0px 0px 3px 0px rgba(4,6,9,0.25);
+      border-radius: .35rem;
+    }
+
+    .icon{
+      padding-left: 1em;
+    }
+
+    .job-logo{
+      margin: 10px;
+      border-radius: 80%;
+    }
+
+    .button{
+      margin: 3px 0px 30px 0px;
+      vertical-align: middle;
+    }
+}
+
+.btn-info{
+  background-color: #71b372;
+  border-color: #6db76e;
+}
+
+
+//-----所有页面都加上图片------
+body {
+    background: url("http://ww4.sinaimg.cn/large/006tNbRwgy1ff99mb0tpsj30oe0i23z6.jpg");
+    //使用 iPic这个软件即可将图片转换为图片超链接，app store 搜索 iPic 即可
+
+    background-size: cover;
+    //这段代码主要实现了图片不会被拉伸变现的效果，具体细则在我发布的另一个教程中有说明
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+}

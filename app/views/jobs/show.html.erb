@@ -1,10 +1,30 @@
-<h1> <%= @job.title %> </h1>
+<div class="container-fluid">
+  <div class="col-md-12">
+    <section id="job-info">
 
-<p>
-  <%= simple_format(@job.description) %>
+      <!-- title -->
+      <div class="job-title">
+        <%= @job.title %>
+      </div>
 
-</p>
+      <!-- location and salary -->
+      <p class="details">
+        <i class="icon fa fa-usd fa-fx" aria-hidden="true"></i>
+        <%= @job.wage_lower_bound / 1000 %> K -
+        <%= @job.wage_upper_bound / 1000 %> K
 
-<div class="text-center">
-  <%= link_to("投交履历", new_job_resume_path(@job), :style => "font-size: 30px; text-decoration: underline;") %>
+      </p>
+
+      <!-- description -->
+      <p class="description">
+        <%= @job.description %>
+      </p>
+
+      <!-- submit resume -->
+      <div class='button'>
+        <%= link_to(t('投递简历'), new_job_resume_path(@job), class: 'btn btn-lg btn-danger button_highlight') %>
+      </div>
+
+
+  </div>
 </div>

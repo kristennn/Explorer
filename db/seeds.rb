@@ -43,7 +43,9 @@ Job.create!(title: "审计师", description: "岗位职责：
 1.本科及以上学历，精通财务会计审计等相关专业知识和政策法规
 2.可以独立带队完成审计业务，独立完成报告工作
 3.具有较强的敬业精神和团队意识，同时具备一定的沟通、组织协调和分析判断能力
-4.能吃苦、工作主动性强，能够严格执行公司的各项规定", wage_lower_bound: 7000, wage_upper_bound: 10000, contact_email: "test@gmail.com", is_hidden: "false")
+4.能吃苦、工作主动性强，能够严格执行公司的各项规定", wage_lower_bound: 7000, wage_upper_bound: 10000, contact_email: "test@gmail.com", ESTJ: "true", is_hidden: "false")
+
+Character.create(name: "ISTJ")
 
 Job.create!(title: "心理咨询师", description: "岗位职责：
 1.向企业内员工提供心理咨询及心理疏导；
